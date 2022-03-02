@@ -98,10 +98,10 @@ public class BinaryConverter {
                 double number2 = scan2.nextDouble();
 
                 int integerPart = (int) number2;
-                String str = String.valueOf(number2); //how many Decimal points have in given number2 number2
+                String str = String.valueOf(number2); //Storing integer as a String
                 //System.out.println(str);
                 int index = str.indexOf(".");
-                int NumberofDecimalPoints = str.substring(index + 1).length();
+                int NumberofDecimalPoints = str.substring(index + 1).length(); //how many Decimal points have in given number2 number2
                 double decimalPart = number2 - integerPart;
                 String roundOffasString = String.format("%." + NumberofDecimalPoints + "f", decimalPart); //decimal part roundoff as String
                 decimalPart = Double.parseDouble(roundOffasString); //round off part as double
