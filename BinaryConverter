@@ -106,6 +106,7 @@ public class BinaryConverter {
                 String roundOffasString = String.format("%." + NumberofDecimalPoints + "f", decimalPart); //decimal part roundoff as String
                 decimalPart = Double.parseDouble(roundOffasString); //round off part as double
                 decimToBin(integerPart);
+                System.out.print(".");
                 floatingPointDecimToBin(decimalPart);
                 System.out.println();
 
